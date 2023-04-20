@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time de Fora!</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome --> 
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+       
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="bg-container">
+
+        <div class="player-container">
+            <header>
+                <h1>Player List</h1>
+            </header>
+            <form id="player-form">
+                <p>Player name:</p>
+                <div class="form-control">
+                    <input type="text" id="player-input" placeholder="Bruninho">
+                    <button type="submit">
+                        <i class="fa-thin fa-plus"></i>
+                    </button>
+                </div>
+            </form>
+            <form id="edit-form" class="hide">
+                <p>Edite o nome</p>
+                <div class="form-control">
+                    <input type="text" id="edit-input">
+                    <button type="submit">
+                        <i class="fa-solid fa-check-double"></i>
+                    </button>
+                </div>
+                <button id="cancel-edit-btn">Cancelar</button>
+            </form>
+            <div id="to-playlist">
+            </div>
+        </div>
+    
+        <div class="team-container">
+            <div id="team-A" class="team">
+                <div class="team-header">
+                    <h2>Team A</h2>
+                </div>
+            </div>
+    
+            <div id="team-B" class="team">
+                <div class="team-header">
+                    <h2>Team B</h2>
+                </div>
+            </div>
+    
+            <div id="team-C" class="team">
+                <div class="team-header">
+                    <h2>Volta</h2>
+                </div>
+    
+            </div>
+        </div>
+
+        <footer class="" id="footer">
+
+            <div class="main-social">
+              <a class="social" href="https://www.linkedin.com/in/pedrosahelqf/"><span class="social fa-brands fa-linkedin"></span></a>
+              <a class="social" href="https://github.com/pedrosahel/I_Am_Next"><span class="social fa-brands fa-square-github"></span></a>
+              
+              <p>© TimeDeFora <i class="fa-solid fa-volleyball"></i> Made By Lordesaphe 2023</p>
+            </div>
+    </div>
+</body>
+</html>

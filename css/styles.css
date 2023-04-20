@@ -1,0 +1,187 @@
+:root {
+    --main--font: 'Montserrat', sans-serif;
+
+    --main-text-color: black;
+    --main-hover-color: #43077d;
+
+    --background-color: #ffc8dd;
+    --panel-color: #9c41f4;
+    --border-color: #ccc;
+}
+/* Main */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--main--font);
+    color: var(--main-text-color);
+    box-sizing: border-box;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: 2px solid var(--main-hover-color);
+    padding: .2rem .4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: var(--main-hover-color);
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.bg-container {
+    width:100%;
+    height:100%; 
+    box-sizing:border-box;
+    background-color: var(--background-color);
+    /* background-image: url("../imgs/background.jpeg"); */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+/* Header */
+
+
+.player-container, .team-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background-color: var(--panel-color);
+    ;
+    border-radius: 15px;
+}
+
+.team-container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.player-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Forms  */
+
+#player-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+#player-form p, #edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3rem;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* Player List */
+
+#to-playlist {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.toplay h4, .team h4 {
+    font-size: .9rem;
+    flex: 1;
+}
+
+
+.toplay, .team-player {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: .3s;
+}
+
+.toplay button, .team-player button {
+    margin-left: .3rem;
+}
+
+/* Team  */
+
+.team {
+    text-align: left;
+    display: inline-block;
+    width: 40%;
+    margin: 2rem auto 4rem;
+}
+
+.team-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.team-header button {
+    margin-left: 1rem;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: var(--panel-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-social {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.social {
+    font-size: 1.5rem;
+    margin: 1rem .5rem 1rem;
+}
+
+.social:hover {
+    color: var(--main-hover-color);
+}
+
+#footer p {
+    font-size: 0.90rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
