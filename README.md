@@ -21,4 +21,4 @@ A casual management list so people can manager the next players to play on a 4x4
 
 ## 😊 How to run
 
-You can actually see it running <a href="https://i-am-next.vercel.app/">here</a>
+You can actually see it running <a href="https://i-am-next.vercel.app/" target="_blank">here</a>
